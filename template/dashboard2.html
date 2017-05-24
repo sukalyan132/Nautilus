@@ -1,25 +1,169 @@
-<div class="container">
-
+<div class="container"  style="background: url('img/bg4.png');width: 80%; background-size:cover;min-height: 600px;">
     <div class="row" >
-      <div class="col-sm-3" align="center">
+      <div style="width: 100%;height: 60px; background-color: #4d98be;position: absolute;margin-left: -10%;">
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-sm-3" align="center" ng-show="trueScoreLeftSection">
+        <div style="margin-top: 53%;height: 320px; width: 40px; background-color: #0f1c44;float: left;margin-left: -63%; cursor: pointer;" ng-click="goToAdminPanel();">
+          <b  style="color: #fff;writing-mode: tb-rl;margin-top: 36%">ADMIN</b>
+          <div class="arrow-right"></div>
+        </div>
+      </div>
+      <div class="col-sm-3" align="right" style="margin-top: 14%;" ng-hide="trueScoreLeftSection">
+        <div style="width: 75%;height: 320px;background-color: #0f1c44;position: absolute;margin-left: -56%;">
+        <div  style="width: 66%; height: 360px;margin-top: -12%;margin-right: 14%;">
+          <div class="row" style="height: 40px;background-color: #013453;line-height: 40px;text-align: center;margin-top: 5px;">
+            <!--<b style="color:#fff;">PUE (1.10)</b>-->
+            <div class="form-group">
+              <select class="form-control" style="background-color: #013453;border-radius: 0px; border: 1px solid #013453;color:#fff;" ng-model="data.PUE" ng-change="calculateTrueScore()">
+                <option value="">PUE</option>
+                <option ng-repeat="pue in PUE track by $index" value="{{pue}}" ng-selected="$index=='0'">{{pue}}</option>
+                
+              </select>
+            </div>
+          </div>
+        <div class="row" style="height: 40px;background-color: #004e74;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #004e74;border-radius: 0px; border: 1px solid #004e74;color:#fff;" ng-model="data.LOCATION" ng-change="calculateTrueScore()">
+              <option value="">LOCATION</option>
+              <option ng-repeat="lacation in LOCATION track by $index" value="{{lacation}}" ng-selected="$index=='0'">{{lacation}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">Location (US CENTRAL)</b>-->
+        </div>
+        <div class="row" style="height: 40px;background-color: #00648b;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #00648b;border-radius: 0px; border: 1px solid #00648b;color:#fff;" ng-model="data.GHG" ng-change="calculateTrueScore()">
+              <option value="">GHG</option>
+              <option ng-repeat="ghg in GHG track by $index" value="{{ghg}}" ng-selected="$index=='0'">{{ghg}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">GHG (1.00)</b>-->
+        </div>
+        <div class="row" style="height: 40px;background-color: #3981a3;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #3981a3;border-radius: 0px; border: 1px solid #3981a3;color:#fff;" ng-model="data.CO2" ng-change="calculateTrueScore()">
+              <option value="">CO2</option>
+              <option ng-repeat="co2 in CO2 track by $index" value="{{co2}}" ng-selected="$index=='0'">{{co2}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">CO2 (1.00)</b>-->
+        </div>
+        <div class="row" style="height: 40px;background-color: #5691b1;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #5691b1;border-radius: 0px; border: 1px solid #5691b1;color:#101d43;" ng-model="data.WUE" ng-change="calculateTrueScore()">
+              <option value="">WUE</option>
+              <option ng-repeat="wue in WUE track by $index" value="{{wue}}" ng-selected="$index=='0'">{{wue}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">WUE (0.00)</b>-->
+        </div>
+        <div class="row" style="height: 40px;background-color: #92b5ce;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #92b5ce;border-radius: 0px; border: 1px solid #92b5ce;color:#101d43;" ng-model="data.AVAILABILITY" ng-change="calculateTrueScore()">
+              <option value="">AVAILABILITY</option>
+              <option ng-repeat="availability in AVAILABILITY track by $index" value="{{availability}}" ng-selected="$index=='0'">{{availability}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">Availability (NETWORK1)</b>-->
+        </div>
+        <div class="row" style="height: 40px;background-color: #b1c9dc;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #b1c9dc;border-radius: 0px; border: 1px solid #b1c9dc;color:#101d43;" ng-model="data.COMPUTE" ng-change="calculateTrueScore()">
+              <option value="">COMPUTE</option>
+              <option ng-repeat="compute in COMPUTE track by $index" value="{{compute}}" ng-selected="$index=='0'">{{compute}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">Compute (COMPUTE1)</b>-->
+        </div>
+        <div class="row" style="height: 40px;background-color: #d2dfeb;text-align: center;line-height: 40px;margin-top: 5px;">
+          <div class="form-group">
+            <select class="form-control" style="background-color: #d2dfeb;border-radius: 0px; border: 1px solid #d2dfeb;color:#101d43;" ng-model="data.STORAGE" ng-change="calculateTrueScore()">
+              <option value="">STORAGE</option>
+              <option ng-repeat="storage in STORAGE track by $index" value="{{storage}}" ng-selected="$index=='0'">{{storage}}</option>
+              
+            </select>
+          </div>
+        <!--<b style="color: #fff;">Storage (SSD1)</b>-->
+        </div>
+          </div>
+        </div>
       </div>
       <div class="col-sm-6" align="center">
 
-        <div class="pieContainer">
-          <div class="pieBackground"></div>
-          <div id="pieSlice1" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice2" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice22" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice3" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice4" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice5" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice6" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice7" class="hold"><div class="pie"></div></div>
-          <div id="pieSlice8" class="hold"><div class="pie"></div></div>
-          <div class="innerCircle"><div class="content"><b>TRUE VALUE</b></div></div>
+        <div class="innerCircle3" >
+          
+          <div class="innerCircle4" ng-style="truevaluStyle3">
+            <div class="content"><b class="trueval_content">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truescore >10 ? {'margin-left': '10%'} : {'margin-left': '25%'}">{{truescore | number:2}}</b>
+            </div>
+          </div>
+
+        </div>
+        <!--<div class="innerCircle33" >
+
+        </div>-->
+        <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+  <div id="pieSlice2" class="hold"><div class="pie"></div></div>
+  <div id="pieSlice3" class="hold"><div class="pie"></div></div>
+  <div id="pieSlice4" class="hold"><div class="pie"></div></div>
+  <div id="pieSlice5" class="hold"><div class="pie"></div></div>
+  <div id="pieSlice6" class="hold"><div class="pie"></div></div>
+
+       <!-- <div class="c100 p50 big">
+                    <span>
+<div class="innerCircle4" ng-style="truevaluStyle3">
+<div class="content"><b class="trueval_content">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truescore >10 ? {'margin-left': '10%'} : {'margin-left': '25%'}">{{truescore | number:2}}</b>
+</div>
+</div>
+                    </span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>-->
+      </div>
+      <div class="col-sm-3" align="right" style="margin-top: 14%;" ng-show="trueScoreRightSection">
+        <div style="    width: 144%;height: 320px;background-color: #0f1c44;position: absolute;">
+          <div  style="width: 66%; height: 360px;margin-top: -6%;margin-right: 20%;">
+          <div class="row" style="height: 40px;background-color: #013453;line-height: 40px;text-align: center;margin-top: 5px;">
+            <b style="color:#fff;">PUE ({{pue | number:2}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #004e74;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #fff;">Location ({{location}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #00648b;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #fff;">GHG ({{ghg | number:2}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #3981a3;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #fff;">CO2 ({{co2 | number:2}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #5691b1;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #101d43;">WUE ({{wue | number:2}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #92b5ce;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #101d43;">Availability ({{availavility}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #b1c9dc;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #101d43;">Compute ({{compute}})</b>
+          </div>
+          <div class="row" style="height: 40px;background-color: #d2dfeb;text-align: center;line-height: 40px;margin-top: 5px;">
+            <b style="color: #505d7b;">Storage ({{storage}})</b>
+          </div>
+        </div>
         </div>
       </div>
-      <div class="col-sm-3" align="center">
+      <div class="col-sm-3" align="center" ng-hide="trueScoreRightSection">
+        <div style="margin-top: 53%;height: 320px; width: 50px; background-color: #0f1c44;cursor: pointer;position: absolute;margin-left: 129%" ng-click="goToDashboard();">
+        <b  style="color: #fff;writing-mode: vertical-lr;margin-top: 36%">DASHBOARD</b>
+        <div class="arrow-left"></div>
+        </div>
       </div>
     </div>
 </div>
