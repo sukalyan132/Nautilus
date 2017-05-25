@@ -50,7 +50,7 @@ angular.module("dashboard",[])
 	// defult value define here
 	if(!$rootScope.truescore  || $rootScope.truescore=='')
 	{
-		$rootScope.truescore	=76;
+		$rootScope.truescore	=50;
 		$scope.truevaluStyle2 	= {'border': '10px solid orange'};
 		$rootScope.pue 			= 1.10;
 		$rootScope.location		= 'US CENTRAL';
@@ -79,57 +79,57 @@ angular.module("dashboard",[])
 	// condition check for score section
 	if($rootScope.truescore>0 && $rootScope.truescore<2.8)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(156deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(156deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-156deg)','top': '47px'};
 	}
 	if($rootScope.truescore>2.8 && $rootScope.truescore<5.6)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(166deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(166deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-166deg)','top': '47px'};
 	}
 	if($rootScope.truescore>5.6 && $rootScope.truescore<8.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(176deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(176deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-176deg)','top': '47px'};
 	}
 	if($rootScope.truescore>8.4 && $rootScope.truescore<11.2)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(186deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(186deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-186deg)','top': '47px'};
 	}
 	if($rootScope.truescore>11.2 && $rootScope.truescore<14)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(196deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(196deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-196deg)','top': '47px'};
 	}
 	if($rootScope.truescore>14 && $rootScope.truescore<16.8)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(206deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(206deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-206deg)','top': '47px'};
 	}
 	if($rootScope.truescore>16.8 && $rootScope.truescore<19.6)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(216deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(216deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-216deg)','top': '47px'};
 	}
 	if($rootScope.truescore>19.6 && $rootScope.truescore<22.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(226deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(226deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-226deg)','top': '47px'};
 	}
 	if($rootScope.truescore>22.4 && $rootScope.truescore<25.2)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(236deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(236deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-236deg)','top': '58px'};
 	}
 	if($rootScope.truescore>25.2 && $rootScope.truescore<28)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(246deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(246deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-246deg)','top': '55px'};
 	}
 	if($rootScope.truescore>28 && $rootScope.truescore<30.8)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(256deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(256deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-256deg)','top': '55px'};
 	}
 	if($rootScope.truescore>30.8 && $rootScope.truescore<33.6)
@@ -139,32 +139,32 @@ angular.module("dashboard",[])
 	}
 	if($rootScope.truescore>33.6 && $rootScope.truescore<36.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(276deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(276deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-276deg)','top': '55px'};
 	}
 	if($rootScope.truescore>36.4 && $rootScope.truescore<39.2)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(286deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(286deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-286deg)','top': '55px'};
 	}
 	if($rootScope.truescore>39.2 && $rootScope.truescore<42)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(296deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(296deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-296deg)','top': '55px'};
 	}
 	if($rootScope.truescore>42 && $rootScope.truescore<44.8)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(306deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(306deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-306deg)','top': '55px'};
 	}
 	if($rootScope.truescore>44.8 && $rootScope.truescore<47.6)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(316deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(316deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-316deg)','top': '55px'};
 	}
 	if($rootScope.truescore>47.6 && $rootScope.truescore<50.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(326deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(326deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-326deg)','top': '47px'};
 	}
 	if($rootScope.truescore>50.4 && $rootScope.truescore<53.2)
@@ -174,82 +174,82 @@ angular.module("dashboard",[])
 	}
 	if($rootScope.truescore>53.2 && $rootScope.truescore<56)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(346deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(346deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-346deg)','top': '47px'};
 	}
 	if($rootScope.truescore>56 && $rootScope.truescore<58.8)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(356deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(356deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-356deg)','top': '39px'};
 	}
 	if($rootScope.truescore>58.8 && $rootScope.truescore<61.6)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(6deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(6deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-6deg)','top': '39px'};
 	}
 	if($rootScope.truescore>61.6 && $rootScope.truescore<64.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(16deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(16deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-16deg)','top': '39px'};
 	}
 	if($rootScope.truescore>64.4 && $rootScope.truescore<67.2)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(26deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(26deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-26deg)','top': '39px'};
 	}
 	if($rootScope.truescore>67.2 && $rootScope.truescore<70)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(36deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(36deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-36deg)','top': '39px'};
 	}
 	if($rootScope.truescore>70 && $rootScope.truescore<72.8)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(46deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(46deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-46deg)','top': '39px'};
 	}
 	if($rootScope.truescore>72.8 && $rootScope.truescore<75.6)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(56deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(56deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-56deg)','top': '39px'};
 	}
 	if($rootScope.truescore>75.6 && $rootScope.truescore<78.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(66deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(66deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-66deg)','top': '39px'};
 	}
 	if($rootScope.truescore>78.4 && $rootScope.truescore<81.2)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(76deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(76deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-76deg)','top': '39px'};
 	}
 	if($rootScope.truescore>81.2 && $rootScope.truescore<84)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(86deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(86deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-86deg)','top': '39px'};
 	}
 	if($rootScope.truescore>84 && $rootScope.truescore<89.6)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(96deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(96deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-96deg)','top': '39px'};
 	}
 	if($rootScope.truescore>89.6 && $rootScope.truescore<92.4)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(106deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(106deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-106deg)','top': '47px'};
 	}
 	if($rootScope.truescore>92.4 && $rootScope.truescore<95.2)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(116deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(116deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-116deg)','top': '52px'};
 	}
 	if($rootScope.truescore>95.2 && $rootScope.truescore<98)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(126deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(126deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-126deg)','top': '52px'};
 	}
 	if($rootScope.truescore>98 && $rootScope.truescore<=100)
 	{
-		$scope.truevaluStyle3	= {'left': '4%','margin-top': '-1%','transform': 'rotate(136deg)'};
+		$scope.truevaluStyle3	= {'left': '5%','margin-top': '1%','transform': 'rotate(136deg)'};
 		$scope.truevaluStyle32 	= {'transform': 'rotate(-166deg)','top': '52px'};
 	}
 	$scope.PUE				=[];
