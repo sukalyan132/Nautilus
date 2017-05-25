@@ -100,21 +100,52 @@
 
         <div class="innerCircle3" >
           
-          <div class="innerCircle4" ng-style="truevaluStyle3">
-            <div class="content"><b class="trueval_content">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truescore >10 ? {'margin-left': '10%'} : {'margin-left': '25%'}">{{truescore | number:2}}</b>
+          <div class="innerCircle4" ng-style="truevaluStyle3" style="background-image: url('img/inner5.png');">
+            <div class="content" ng-style="truevaluStyle32" ><b class="trueval_content">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truescore >10 ? {'margin-left': '10%'} : {'margin-left': '25%'}">{{truescore | number:2}}</b>
             </div>
+            
           </div>
 
         </div>
         <!--<div class="innerCircle33" >
 
         </div>-->
-        <div id="pieSlice1" class="hold"><div class="pie"></div></div>
-  <div id="pieSlice2" class="hold"><div class="pie"></div></div>
-  <div id="pieSlice3" class="hold"><div class="pie"></div></div>
-  <div id="pieSlice4" class="hold"><div class="pie"></div></div>
-  <div id="pieSlice5" class="hold"><div class="pie"></div></div>
-  <div id="pieSlice6" class="hold"><div class="pie"></div></div>
+        <div id="pieSlice1" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>0"></div>
+        <div id="pieSlice2" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>2.8"></div>
+        <div id="pieSlice3" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>5.6"></div>
+        <div id="pieSlice4" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>8.4"></div>
+        <div id="pieSlice5" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>11.2"></div>
+        <div id="pieSlice6" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>14"></div>
+        <div id="pieSlice7" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>16.8"></div>
+        <div id="pieSlice8" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>19.6"></div>
+        <div id="pieSlice9" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>22.4"></div>
+        <div id="pieSlice10" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>25.2"></div>
+        <div id="pieSlice11" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>28"></div>
+        <div id="pieSlice12" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>30.8"></div>
+        <div id="pieSlice13" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>33.6"></div>
+        <div id="pieSlice14" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>36.4"></div>
+        <div id="pieSlice15" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>39.2"></div>
+        <div id="pieSlice16" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>42"></div>
+        <div id="pieSlice17" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>44.8"></div>
+        <div id="pieSlice18" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>47.6"></div>
+        <div id="pieSlice19" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>50.4"></div>
+        <div id="pieSlice20" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>53.2"></div>
+        <div id="pieSlice21" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>56"></div>
+        <div id="pieSlice22" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>58.8"></div>
+        <div id="pieSlice23" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>61.6"></div>
+        <div id="pieSlice24" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>64.4"></div>
+        <div id="pieSlice25" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>67.2"></div>
+        <div id="pieSlice26" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>70"></div>
+        <div id="pieSlice27" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>72.8"></div>
+        <div id="pieSlice28" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>75.6"></div>
+        <div id="pieSlice29" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>78.4"></div>
+        <div id="pieSlice30" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>81.2"></div>
+        <div id="pieSlice31" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>84"></div>
+        <div id="pieSlice32" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>86.8"></div>
+        <div id="pieSlice33" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>89.6"></div>
+        <div id="pieSlice34" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>92.4"></div>
+        <div id="pieSlice35" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>95.2"></div>
+        <div id="pieSlice36" class="hold" style="border: 10px solid #1d83ff" ng-if="truescore>98"></div>
 
        <!-- <div class="c100 p50 big">
                     <span>

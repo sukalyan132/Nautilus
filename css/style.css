@@ -78,16 +78,18 @@
 }
 .innerCircle4{
 	 position: absolute;
-    width: 240px;
-    height: 240px;
-   background-color: #2a97fe;
-    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../img/inner4.png');
+        background-size: cover;
+   /*background-color: #2a97fe;*/
+    border-radius: 125px;
     /* top: 40%; */
-    left: 10%;
+    left: 6%;
     box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
     color: white;
     line-height: 65PX;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: -5%;
     
 }
@@ -282,57 +284,136 @@ tip-tip .close-button {
   width: 270px;
   height: 270px;
   border-radius: 135px;
-  clip: rect(0px, 270px, 270px, 135px);
-      margin-top: 35%;
-    margin-left: 1%;
+  clip: rect(0px, 158px, 18px, 135px);
+  margin-top: 35%;
+  margin-left: 1%;
 }
-
-#pieSlice1 .pie {
-  background-color: #1b458b;
-  transform:rotate(30deg);
+#pieSlice {
+  border: 10px solid #1d83ff !important;
 }
 
 #pieSlice2 {
-  transform: rotate(30deg);
-}
-
-#pieSlice2 .pie {
-  background-color: #0a0;
-  transform: rotate(60deg);
-}
-
-#pieSlice3 {
-  transform: rotate(90deg);
-}
-
-#pieSlice3 .pie {
-  background-color: #f80;
-  transform: rotate(120deg);
-}
-
-#pieSlice4 {
-  transform: rotate(210deg);
-}
-
-#pieSlice4 .pie {
-  background-color: #08f;
   transform: rotate(10deg);
 }
 
-#pieSlice5 {
-  transform: rotate(220deg);
+#pieSlice3 {
+  transform: rotate(20deg);
 }
 
-#pieSlice5 .pie {
-  background-color: #a04;
-  transform: rotate(70deg);
+#pieSlice4 {
+  transform: rotate(30deg);
+}
+#pieSlice5 {
+  transform: rotate(40deg);
 }
 
 #pieSlice6 {
-  transform: rotate(290deg);
+  transform: rotate(50deg);
+}
+#pieSlice7 {
+  transform: rotate(60deg);
 }
 
-#pieSlice6 .pie {
-  background-color: #ffd700;
+#pieSlice8 {
   transform: rotate(70deg);
+}
+
+#pieSlice9 {
+  transform: rotate(80deg);
+}
+#pieSlice10 {
+  transform: rotate(90deg);
+}
+
+#pieSlice11 {
+  transform: rotate(100deg);
+}
+#pieSlice12 {
+  transform: rotate(110deg);
+}
+
+#pieSlice13 {
+  transform: rotate(120deg);
+}
+
+#pieSlice14 {
+  transform: rotate(130deg);
+}
+#pieSlice15 {
+  transform: rotate(140deg);
+}
+
+#pieSlice16 {
+  transform: rotate(150deg);
+}
+#pieSlice17{
+  transform: rotate(160deg);
+}
+
+#pieSlice18 {
+  transform: rotate(170deg);
+}
+
+#pieSlice19 {
+  transform: rotate(180deg);
+}
+#pieSlice20 {
+  transform: rotate(190deg);
+}
+
+#pieSlice21 {
+  transform: rotate(200deg);
+}
+#pieSlice22 {
+  transform: rotate(210deg);
+}
+
+#pieSlice23 {
+  transform: rotate(220deg);
+}
+
+#pieSlice24 {
+  transform: rotate(230deg);
+}
+#pieSlice25 {
+  transform: rotate(240deg);
+}
+
+#pieSlice26 {
+  transform: rotate(250deg);
+}
+#pieSlice27{
+  transform: rotate(260deg);
+}
+
+#pieSlice28 {
+  transform: rotate(270deg);
+}
+
+#pieSlice29 {
+  transform: rotate(280deg);
+}
+#pieSlice30 {
+  transform: rotate(290deg);
+}
+#pieSlice31 {
+  transform: rotate(300deg);
+}
+#pieSlice32 {
+  transform: rotate(310deg);
+}
+
+#pieSlice33 {
+  transform: rotate(320deg);
+}
+
+#pieSlice34 {
+  transform: rotate(330deg);
+}
+#pieSlice35 {
+  transform: rotate(340deg);
+}
+
+#pieSlice36 {
+  transform: rotate(350deg);
 }
