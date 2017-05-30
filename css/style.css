@@ -76,20 +76,37 @@
     margin-left: -7%;
     border: 10px solid blue;
 }
-.innerCircle4{
+.innerCircle42{
 	 position: absolute;
-    width: 250px;
-    height: 250px;
-    background-image: url('../img/inner4.png');
+    width: 300px;
+    height: 300px;
+    /*background-image: url('../img/tds3.png');*/
         background-size: cover;
    /*background-color: #2a97fe;*/
-    border-radius: 125px;
+    border-radius: 150px;
     /* top: 40%; */
-    left: 6%;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
+    left: 50%;
+   /* box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;*/
     color: white;
     line-height: 65PX;
-    margin-top: 0%;
+    margin-top: -59%;
+    margin-left: -5%;
+    
+}
+.innerCircle4{
+   position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/tds3.png');
+        background-size: cover;
+   /*background-color: #2a97fe;*/
+    border-radius: 150px;
+    /* top: 40%; */
+    left: 10%;
+   /* box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;*/
+    color: white;
+    line-height: 65PX;
+    margin-top: -59%;
     margin-left: -5%;
     
 }
@@ -108,6 +125,62 @@
     margin-left: -7%;
    /* border: 10px solid blue;*/
     transform: rotate(0deg);
+}
+.leftSmallpanel{
+  margin-top: 16%;
+  height: 430px; 
+  width: 60px; 
+  background-color: #346381;
+  float: left;
+  margin-left: -52%; 
+  cursor: pointer;
+}
+.rightBigPanel{
+  width: 100%;
+  height: 420px;
+  background-color: #34637f;
+  margin-top:43%;
+  margin-left: 30%;
+}
+.leftBigpanel{
+  width: 85%;
+  height: 420px;
+  background-color: #346381;
+  position: absolute;
+  margin-left: -46%;
+  margin-top: 33%;
+}
+.rightPanelSub{
+  width: 54%; 
+  height: 360px;
+  margin-top: -124%;
+  margin-left: 42%;
+}
+.rightSmallPanel{
+  margin-top: -68%;
+  height: 420px; 
+  width: 65px; 
+  background-color: #34637f;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 102%
+}
+.rightSmallPanel2{
+  margin-top: -68%;
+  height: 502px; 
+  width: 65px; 
+  background-color: #34637f;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 102%
+}
+.leftBigpanel2{
+  width: 85%;
+  height: 502px;
+  background-color: #346381;
+  position: absolute;
+  margin-left: -46%;
+  margin-top: 33%;
 }
 @media (min-width:1160px){
 	.innerCircle3 {
@@ -152,6 +225,45 @@
     margin-left: 1%;
     margin-top: 17%;
 }
+.leftSmallpanel{
+  margin-top: 16%;
+  height: 430px; 
+  width: 60px; 
+  background-color: #346381;
+  float: left;
+  margin-left: -58%; 
+  cursor: pointer;
+}
+.rightBigPanel{
+    width: 100%;
+    height: 420px;
+    background-color: #34637f;
+    margin-top: 43%;
+    margin-left: 41%;
+}
+.leftBigpanel{
+  width: 85%;
+  height: 420px;
+  background-color: #346381;
+  position: absolute;
+  margin-left: -46%;
+  margin-top: 33%;
+}
+.rightPanelSub{
+    width: 54%;
+    height: 360px;
+    margin-top: -124%;
+    margin-left: 55%;
+}
+.rightSmallPanel{
+  margin-top: -68%;
+  height: 420px; 
+  width: 65px; 
+  background-color: #34637f;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 107%
+}
 }
 @media (width: 1366px){
 	.innerCircle3 {
@@ -168,6 +280,47 @@
     margin-top: 36%;
     margin-left: -7%;
     border: 5px solid #898a89;
+}
+}
+@media (width: 1280px){
+  .leftSmallpanel {
+    margin-top: 16%;
+    height: 430px;
+    width: 60px;
+    background-color: #346381;
+    float: left;
+    margin-left: -45%;
+    cursor: pointer;
+}
+.rightBigPanel {
+    width: 100%;
+    height: 420px;
+    background-color: #34637f;
+    margin-top: 43%;
+    margin-left: 19%;
+}
+.rightPanelSub{
+        width: 54%;
+    height: 360px;
+    margin-top: -124%;
+    margin-left: 33%;
+}
+.leftBigpanel{
+  width: 85%;
+  height: 420px;
+  background-color: #346381;
+  position: absolute;
+  margin-left: -30%;
+  margin-top: 33%;
+}
+.rightSmallPanel{
+  margin-top: -68%;
+  height: 420px; 
+  width: 65px; 
+  background-color: #34637f;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 96%
 }
 }
 @media (width: 1366px) and (height: 600px)
@@ -192,7 +345,7 @@
 	float: left;
     width: 100%;
     height: 20px;
-    margin-left: 0%;
+    margin-left: 44%;
     font-size: 26px;
     margin-top: 14%;
 }
@@ -266,6 +419,7 @@ tip-tip .close-button {
   border-bottom: 10px solid transparent;
   
   border-right:  10px solid #fff;
+  margin-right: 5px;
 }
 
 

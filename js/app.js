@@ -6,7 +6,7 @@ angular.module("myApp", ["ngRoute","dashboard",'720kb.tooltips'])
         controller : "dashboardController",
     })
     .when("/dashboard", {
-        templateUrl : "template/adminPanel.html",
+        templateUrl : "template/dashboard.html",
         controller : "dashboardController"
     })
     .when("/admin", {
