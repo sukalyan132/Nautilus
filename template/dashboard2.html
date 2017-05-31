@@ -13,9 +13,8 @@
         </div>
       </div>
       <div class="innerCircle42" ng-style="truevaluStyle3" style=" background-image: url('img/tds3.png');">
-        <div class="content" ng-style="truevaluStyle32" ><b class="trueval_content" ng-style="truevaluStyle36">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truevaluStyle37">{{truescore | number:2}}</b>
         </div>
-
+      <div class="content" style="position: absolute;" ><b class="trueval_content" ng-style="truescore<10 ? {'margin-top':'-110%','margin-left':'118%'} : {'margin-top':'-96%'}">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truescore<10 ? {'margin-top':'-92%','margin-left': '132%'} : {'margin-top':'-86%'}">{{truescore | number:2}}</b>
       </div>
     </div>
     <div class="col-sm-4">
@@ -150,9 +149,10 @@
         
       </div>
       <div class="innerCircle4" ng-style="truevaluStyle3" style="background-image: url('img/tds3.png');">
-        <div class="content" ng-style="truevaluStyle32" ><b class="trueval_content" ng-style="truevaluStyle36">TRUE&trade; SCORE</b><b class="trueval_score" ng-style="truevaluStyle37">{{truescore | number:2}}</b>
-        </div>
 
+      </div>
+
+      <div class="content" style="position: absolute;" ><b class="trueval_content2" ng-style="truescore<10 ? {'margin-top':'-110%'} : {'margin-top':'-96%'}">TRUE&trade; SCORE</b><b class="trueval_score2" ng-style="truescore<10 ? {'margin-top':'-92%','margin-left': '34%'} : {'margin-top':'-86%'}">{{truescore | number:2}}</b>
       </div>
       <div>
         <div style="" class="rightSmallPanel" ng-click="goToDashboard();">
